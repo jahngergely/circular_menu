@@ -176,10 +176,10 @@ class CircularMenuState extends State<CircularMenu>
           curve: widget.curve,
           reverseCurve: widget.reverseCurve),
     );
-    _itemsCount = widget.items.length;
   }
 
   List<Widget> _buildMenuItems() {
+     _itemsCount = widget.items.length;
     List<Widget> items = [];
     widget.items.asMap().forEach((index, item) {
       items.add(
